@@ -57,6 +57,22 @@ build CMakeFiles/Semester_Project.dir/main.cpp.obj: CXX_COMPILER__Semester_Proje
   OBJECT_DIR = CMakeFiles\Semester_Project.dir
   OBJECT_FILE_DIR = CMakeFiles\Semester_Project.dir
 
+build CMakeFiles/Semester_Project.dir/Character.cpp.obj: CXX_COMPILER__Semester_Project_unscanned_Debug C$:/Users/alex/CLionProjects/Semester_Project/Character.cpp || cmake_object_order_depends_target_Semester_Project
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\Semester_Project.dir\Character.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\Semester_Project.dir
+  OBJECT_FILE_DIR = CMakeFiles\Semester_Project.dir
+
+build CMakeFiles/Semester_Project.dir/Map.cpp.obj: CXX_COMPILER__Semester_Project_unscanned_Debug C$:/Users/alex/CLionProjects/Semester_Project/Map.cpp || cmake_object_order_depends_target_Semester_Project
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\Semester_Project.dir\Map.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\Semester_Project.dir
+  OBJECT_FILE_DIR = CMakeFiles\Semester_Project.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Semester_Project
@@ -65,7 +81,7 @@ build CMakeFiles/Semester_Project.dir/main.cpp.obj: CXX_COMPILER__Semester_Proje
 #############################################
 # Link the executable Semester_Project.exe
 
-build Semester_Project.exe: CXX_EXECUTABLE_LINKER__Semester_Project_Debug CMakeFiles/Semester_Project.dir/main.cpp.obj | C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libfreetype.a
+build Semester_Project.exe: CXX_EXECUTABLE_LINKER__Semester_Project_Debug CMakeFiles/Semester_Project.dir/main.cpp.obj CMakeFiles/Semester_Project.dir/Character.cpp.obj CMakeFiles/Semester_Project.dir/Map.cpp.obj | C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libfreetype.a
   FLAGS = -g
   LINK_FLAGS = -static -static-libgcc
   LINK_LIBRARIES = C:/SFML/lib/libsfml-graphics-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  C:/SFML/lib/libsfml-system-s-d.a  -lOpenGL32  -lwinmm  -lgdi32  C:/SFML/lib/libfreetype.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
