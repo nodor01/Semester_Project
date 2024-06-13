@@ -7,7 +7,8 @@ set(SFML_STATIC_LIBRARIES TRUE)
 
 add_executable(Semester_Project main.cpp
         Character.cpp
-        Map.cpp)
+        Map.cpp
+        Attack.cpp)
 
 set(SFML_DIR "C:\\SFML\\lib\\cmake\\SFML")
 

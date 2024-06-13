@@ -4,36 +4,27 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
-enum TileType {
-    WALL,
-    FLOOR,
-    CORRIDOR,
-    ENTRANCE,
-    EXIT
-};
-
-struct Tile {
-    TileType type;
-    sf::RectangleShape shape;
-    bool isPassable;
-
-    Tile();
-};
-
 class Map {
 public:
-    Map(int width, int height);
+    Map();
 
-    void draw(sf::RenderWindow& window);
-    void generateRooms(int numRooms);
-    void moveCharacter(sf::Vector2i& characterPos, sf::Vector2i newPos);
+    void draw(sf::RenderWindow& window) const;
+    bool canMoveTo(int x, int y) const;
+
+    void createRoomChain(int roomCount, const sf::Vector2u& windowSize);
 
 private:
     int width, height;
-    std::vector<std::vector<Tile>> tiles;
+    std::vector<int> tiles;
+    sf::VertexArray vertices;
+    std::vector<std::vector<bool>> roomGrid; // Сетка занятых комнат
 
-    void generateRoom(int startX, int startY);
-    void generateConnectedRoom();
+    void updateVertices();
+    bool placeRoom(const std::vector<int>& pattern, int startX, int startY, int roomWidth, int roomHeight);
+    void connectRooms(int startX1, int startY1, int startX2, int startY2);
+    void loadRoomPattern(const std::vector<int>& pattern, int startX, int startY, int roomWidth, int roomHeight);
+
+    static const std::vector<std::vector<int>> roomPatterns;
 };
 
 #endif // MAP_H
