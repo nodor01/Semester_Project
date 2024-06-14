@@ -4,21 +4,28 @@
 #include <vector>
 #include <string>
 
+enum class AttackType {
+    Fire,
+    Poison,
+    Water,
+    Electric
+};
+
 class Attack {
 public:
-    Attack(int damage, const std::vector<int>& pattern, int width, int height, const std::string& type);
+    Attack(int damage, const std::vector<int>& pattern, int width, int height, AttackType type);
 
     int getDamage() const;
     const std::vector<int>& getPattern() const;
     int getWidth() const;
     int getHeight() const;
-    const std::string& getType() const;
+    AttackType getType() const;
 
 private:
     int damage;
     std::vector<int> pattern;
     int width, height;
-    std::string type;
+    AttackType type;
 };
 
 #endif // ATTACK_H

@@ -10,14 +10,15 @@ public:
 
     void draw(sf::RenderWindow& window) const;
     bool canMoveTo(int x, int y) const;
-
     void createRoomChain(int roomCount, const sf::Vector2u& windowSize);
+    sf::Vector2i getCenterOfFirstRoom() const; // Новый метод
 
 private:
     int width, height;
     std::vector<int> tiles;
     sf::VertexArray vertices;
     std::vector<std::vector<bool>> roomGrid; // Сетка занятых комнат
+    std::vector<std::pair<int, int>> roomPositions; // Позиции комнат
 
     void updateVertices();
     bool placeRoom(const std::vector<int>& pattern, int startX, int startY, int roomWidth, int roomHeight);

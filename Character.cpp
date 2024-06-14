@@ -1,49 +1,53 @@
 #include "Character.h"
+#include <iostream>
 
-Character::Character(int x, int y) : position(x, y), pixelPosition(x * 22.0f, y * 22.0f) {}
+Character::Character(int startX, int startY) : position(startX * 22, startY * 22), speed(200.0f), direction(Up) {
+    shape.setSize(sf::Vector2f(22, 22));
+    shape.setFillColor(sf::Color::Red);
+    shape.setPosition(position);
+    std::cout << "Character created at position: (" << position.x << ", " << position.y << ")\n";
+}
 
-void Character::draw(sf::RenderWindow& window) const {
-    sf::RectangleShape character(sf::Vector2f(18, 18));
-    character.setPosition(pixelPosition.x + 1, pixelPosition.y + 1);
-    character.setFillColor(sf::Color::Red);
-
-    sf::RectangleShape indicator(sf::Vector2f(6, 6));
-    switch (direction) {
-        case 0: indicator.setPosition(pixelPosition.x + 7, pixelPosition.y - 3); break; // Вверх
-        case 1: indicator.setPosition(pixelPosition.x + 7, pixelPosition.y + 15); break; // Вниз
-        case 2: indicator.setPosition(pixelPosition.x - 3, pixelPosition.y + 7); break; // Влево
-        case 3: indicator.setPosition(pixelPosition.x + 15, pixelPosition.y + 7); break; // Вправо
-    }
-    indicator.setFillColor(sf::Color::Blue);
-
-    window.draw(character);
-    window.draw(indicator);
+void Character::draw(sf::RenderWindow& window) {
+    window.draw(shape);
 }
 
 void Character::move(int dx, int dy, const Map& map) {
-    sf::Vector2i newPos = position + sf::Vector2i(dx, dy);
-    if (map.canMoveTo(newPos.x, newPos.y)) {
-        position = newPos;
-        if (dx == 0 && dy == -1) direction = 0;
-        else if (dx == 0 && dy == 1) direction = 1;
-        else if (dx == -1 && dy == 0) direction = 2;
-        else if (dx == 1 && dy == 0) direction = 3;
+    sf::Vector2f newPosition = position + sf::Vector2f(dx * 22, dy * 22);
+    int newX = static_cast<int>(newPosition.x / 22);
+    int newY = static_cast<int>(newPosition.y / 22);
+
+    if (map.canMoveTo(newX, newY)) {
+        position = newPosition;
+        shape.setPosition(position);
+        std::cout << "Character moved to position: (" << position.x << ", " << position.y << ")\n";
     }
 }
 
 void Character::update(sf::Time deltaTime, const Map& map) {
-    pixelPosition.x = position.x * 22.0f;
-    pixelPosition.y = position.y * 22.0f;
+    // Обновление состояния персонажа (если нужно)
 }
 
-void Character::attack(const Map& map) {
-    // Пример атаки, которая будет удалять стены перед персонажем
-    sf::Vector2i attackPos = position;
+void Character::attack(Map& map) {
+    // Реализация атаки (если нужно)
+}
+
+void Character::rotate(Direction direction) {
+    direction = direction;
+
     switch (direction) {
-        case 0: attackPos.y -= 1; break; // Вверх
-        case 1: attackPos.y += 1; break; // Вниз
-        case 2: attackPos.x -= 1; break; // Влево
-        case 3: attackPos.x += 1; break; // Вправо
+        case Up:
+            shape.setRotation(0);
+            break;
+        case Right:
+            shape.setRotation(90);
+            break;
+        case Down:
+            shape.setRotation(180);
+            break;
+        case Left:
+            shape.setRotation(-90);
+            break;
     }
-    // Здесь вы можете добавить логику атаки в зависимости от типа атаки
+    std::cout << "Character rotated to direction: " << direction << "\n";
 }

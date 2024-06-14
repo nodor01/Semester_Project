@@ -2,31 +2,44 @@
 #include <cstdlib>
 #include <ctime>
 
-// Определение статического вектора с паттернами комнат
+// Пример паттернов комнат
 const std::vector<std::vector<int>> Map::roomPatterns = {
         {
                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-                1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1,
                 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-                1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1,
                 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-                1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1,
                 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-                1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1,
+                1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+                1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+                1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+                1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
                 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
         },
         {
                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+                1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1,
+                1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1,
+                1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1,
                 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+                1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1,
+                1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1,
+                1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1,
                 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+        },
+        {
+                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-                1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-                1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-                1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-                1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+                1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1,
+                1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1,
+                1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1,
+                1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1,
+                1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1,
+                1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1,
+                1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1,
                 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
         }
@@ -70,7 +83,7 @@ void Map::connectRooms(int startX1, int startY1, int startX2, int startY2) {
     }
     while (y1 != y2) {
         tiles[y1 * width + x1] = 0; // Создаем проход
-        if (y1 < y2) y1++;
+        if (y1 < x2) y1++;
         else y1--;
     }
 }
@@ -88,7 +101,8 @@ void Map::createRoomChain(int roomCount, const sf::Vector2u& windowSize) {
     vertices.setPrimitiveType(sf::Quads);
     vertices.resize(width * height * 4);
 
-    std::vector<std::pair<int, int>> roomPositions;
+    // Очищаем позиции комнат
+    roomPositions.clear();
 
     // Размер одной комнаты
     int roomWidth = 11;
@@ -114,63 +128,67 @@ void Map::createRoomChain(int roomCount, const sf::Vector2u& windowSize) {
             switch (dir) {
                 case 0: // Вверх
                     startX = prevRoomX;
-                    startY = prevRoomY - roomHeight;
+                    startY = prevRoomY - roomHeight - 1;
                     break;
                 case 1: // Вниз
                     startX = prevRoomX;
-                    startY = prevRoomY + roomHeight;
+                    startY = prevRoomY + roomHeight + 1;
                     break;
                 case 2: // Влево
-                    startX = prevRoomX - roomWidth;
+                    startX = prevRoomX - roomWidth - 1;
                     startY = prevRoomY;
                     break;
                 case 3: // Вправо
-                    startX = prevRoomX + roomWidth;
+                    startX = prevRoomX + roomWidth + 1;
                     startY = prevRoomY;
                     break;
             }
 
             if (placeRoom(selectedPattern, startX, startY, roomWidth, roomHeight)) {
-                roomPositions.emplace_back(startX, startY);
-                connectRooms(prevRoomX, prevRoomY, startX, startY);
                 roomPlaced = true;
+                connectRooms(prevRoomX, prevRoomY, startX, startY);
+                roomPositions.emplace_back(startX, startY);
                 break;
             }
         }
         if (!roomPlaced) {
-            i--; // Попробовать снова, если комната не была размещена
+            break; // Не удалось разместить комнату после нескольких попыток
         }
     }
 
-    updateVertices();
-}
-
-void Map::updateVertices() {
     for (int y = 0; y < height; ++y) {
         for (int x = 0; x < width; ++x) {
-            int tileIndex = y * width + x;
-            int tileType = tiles[tileIndex];
+            int tileNumber = tiles[y * width + x];
 
-            sf::Color color;
-            if (tileType == 1) {
-                color = sf::Color::Black; // Стена
+            sf::Vertex* quad = &vertices[(y * width + x) * 4];
+
+            quad[0].position = sf::Vector2f(x * tileSize, y * tileSize);
+            quad[1].position = sf::Vector2f((x + 1) * tileSize, y * tileSize);
+            quad[2].position = sf::Vector2f((x + 1) * tileSize, (y + 1) * tileSize);
+            quad[3].position = sf::Vector2f(x * tileSize, (y + 1) * tileSize);
+
+            if (tileNumber == 0) {
+                quad[0].color = sf::Color::White;
+                quad[1].color = sf::Color::White;
+                quad[2].color = sf::Color::White;
+                quad[3].color = sf::Color::White;
             } else {
-                color = sf::Color::White; // Пол
+                quad[0].color = sf::Color::Black;
+                quad[1].color = sf::Color::Black;
+                quad[2].color = sf::Color::Black;
+                quad[3].color = sf::Color::Black;
             }
-
-            float posX = x * 22.0f; // Размер ячейки + контур
-            float posY = y * 22.0f; // Размер ячейки + контур
-
-            vertices[tileIndex * 4].position = sf::Vector2f(posX, posY);
-            vertices[tileIndex * 4].color = color;
-            vertices[tileIndex * 4 + 1].position = sf::Vector2f(posX + 20.0f, posY);
-            vertices[tileIndex * 4 + 1].color = color;
-            vertices[tileIndex * 4 + 2].position = sf::Vector2f(posX + 20.0f, posY + 20.0f);
-            vertices[tileIndex * 4 + 2].color = color;
-            vertices[tileIndex * 4 + 3].position = sf::Vector2f(posX, posY + 20.0f);
-            vertices[tileIndex * 4 + 3].color = color;
         }
     }
+}
+
+sf::Vector2i Map::getCenterOfFirstRoom() const {
+    if (roomPositions.empty()) {
+        return sf::Vector2i(0, 0);
+    }
+    int centerX = roomPositions[0].first + 5;
+    int centerY = roomPositions[0].second + 5;
+    return sf::Vector2i(centerX, centerY);
 }
 
 void Map::draw(sf::RenderWindow& window) const {

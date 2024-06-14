@@ -1,6 +1,6 @@
 #include "Attack.h"
 
-Attack::Attack(int damage, const std::vector<int>& pattern, int width, int height, const std::string& type)
+Attack::Attack(int damage, const std::vector<int>& pattern, int width, int height, AttackType type)
         : damage(damage), pattern(pattern), width(width), height(height), type(type) {}
 
 int Attack::getDamage() const {
@@ -19,6 +19,6 @@ int Attack::getHeight() const {
     return height;
 }
 
-const std::string& Attack::getType() const {
+AttackType Attack::getType() const {
     return type;
 }
