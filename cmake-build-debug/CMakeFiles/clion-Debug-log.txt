@@ -9,6 +9,6 @@ CMake Deprecation Warning:
 
 
 -- Found SFML 2.6.1 in C:/SFML/lib/cmake/SFML
--- Configuring done (0.6s)
+-- Configuring done (0.5s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/shatr/CLionProjects/Semester_Project/cmake-build-debug

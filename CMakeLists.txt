@@ -6,9 +6,11 @@ set(CMAKE_EXE_LINKER_FLAGS "-static -static-libgcc")
 set(SFML_STATIC_LIBRARIES TRUE)
 
 add_executable(Semester_Project main.cpp
-        Character.cpp
-        Map.cpp
-        Attack.cpp)
+        Character/Character.cpp
+        Map/Map.cpp
+        Attack/Attack.cpp
+        Menu/Menu.cpp
+        Menu/Menu.h)
 
 set(SFML_DIR "C:\\SFML\\lib\\cmake\\SFML")
 

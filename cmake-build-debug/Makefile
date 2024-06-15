@@ -128,77 +128,101 @@ Semester_Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/build
 .PHONY : Semester_Project/fast
 
-Attack.obj: Attack.cpp.obj
-.PHONY : Attack.obj
+Attack/Attack.obj: Attack/Attack.cpp.obj
+.PHONY : Attack/Attack.obj
 
 # target to build an object file
-Attack.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Attack.cpp.obj
-.PHONY : Attack.cpp.obj
+Attack/Attack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.obj
+.PHONY : Attack/Attack.cpp.obj
 
-Attack.i: Attack.cpp.i
-.PHONY : Attack.i
+Attack/Attack.i: Attack/Attack.cpp.i
+.PHONY : Attack/Attack.i
 
 # target to preprocess a source file
-Attack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Attack.cpp.i
-.PHONY : Attack.cpp.i
+Attack/Attack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.i
+.PHONY : Attack/Attack.cpp.i
 
-Attack.s: Attack.cpp.s
-.PHONY : Attack.s
+Attack/Attack.s: Attack/Attack.cpp.s
+.PHONY : Attack/Attack.s
 
 # target to generate assembly for a file
-Attack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Attack.cpp.s
-.PHONY : Attack.cpp.s
+Attack/Attack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.s
+.PHONY : Attack/Attack.cpp.s
 
-Character.obj: Character.cpp.obj
-.PHONY : Character.obj
+Character/Character.obj: Character/Character.cpp.obj
+.PHONY : Character/Character.obj
 
 # target to build an object file
-Character.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Character.cpp.obj
-.PHONY : Character.cpp.obj
+Character/Character.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Character/Character.cpp.obj
+.PHONY : Character/Character.cpp.obj
 
-Character.i: Character.cpp.i
-.PHONY : Character.i
+Character/Character.i: Character/Character.cpp.i
+.PHONY : Character/Character.i
 
 # target to preprocess a source file
-Character.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Character.cpp.i
-.PHONY : Character.cpp.i
+Character/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Character/Character.cpp.i
+.PHONY : Character/Character.cpp.i
 
-Character.s: Character.cpp.s
-.PHONY : Character.s
+Character/Character.s: Character/Character.cpp.s
+.PHONY : Character/Character.s
 
 # target to generate assembly for a file
-Character.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Character.cpp.s
-.PHONY : Character.cpp.s
+Character/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Character/Character.cpp.s
+.PHONY : Character/Character.cpp.s
 
-Map.obj: Map.cpp.obj
-.PHONY : Map.obj
+Map/Map.obj: Map/Map.cpp.obj
+.PHONY : Map/Map.obj
 
 # target to build an object file
-Map.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Map.cpp.obj
-.PHONY : Map.cpp.obj
+Map/Map.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Map/Map.cpp.obj
+.PHONY : Map/Map.cpp.obj
 
-Map.i: Map.cpp.i
-.PHONY : Map.i
+Map/Map.i: Map/Map.cpp.i
+.PHONY : Map/Map.i
 
 # target to preprocess a source file
-Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Map.cpp.i
-.PHONY : Map.cpp.i
+Map/Map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Map/Map.cpp.i
+.PHONY : Map/Map.cpp.i
 
-Map.s: Map.cpp.s
-.PHONY : Map.s
+Map/Map.s: Map/Map.cpp.s
+.PHONY : Map/Map.s
 
 # target to generate assembly for a file
-Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Map.cpp.s
-.PHONY : Map.cpp.s
+Map/Map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Map/Map.cpp.s
+.PHONY : Map/Map.cpp.s
+
+Menu/Menu.obj: Menu/Menu.cpp.obj
+.PHONY : Menu/Menu.obj
+
+# target to build an object file
+Menu/Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.obj
+.PHONY : Menu/Menu.cpp.obj
+
+Menu/Menu.i: Menu/Menu.cpp.i
+.PHONY : Menu/Menu.i
+
+# target to preprocess a source file
+Menu/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.i
+.PHONY : Menu/Menu.cpp.i
+
+Menu/Menu.s: Menu/Menu.cpp.s
+.PHONY : Menu/Menu.s
+
+# target to generate assembly for a file
+Menu/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Semester_Project.dir\build.make CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.s
+.PHONY : Menu/Menu.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -233,15 +257,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Semester_Project
-	@echo ... Attack.obj
-	@echo ... Attack.i
-	@echo ... Attack.s
-	@echo ... Character.obj
-	@echo ... Character.i
-	@echo ... Character.s
-	@echo ... Map.obj
-	@echo ... Map.i
-	@echo ... Map.s
+	@echo ... Attack/Attack.obj
+	@echo ... Attack/Attack.i
+	@echo ... Attack/Attack.s
+	@echo ... Character/Character.obj
+	@echo ... Character/Character.i
+	@echo ... Character/Character.s
+	@echo ... Map/Map.obj
+	@echo ... Map/Map.i
+	@echo ... Map/Map.s
+	@echo ... Menu/Menu.obj
+	@echo ... Menu/Menu.i
+	@echo ... Menu/Menu.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

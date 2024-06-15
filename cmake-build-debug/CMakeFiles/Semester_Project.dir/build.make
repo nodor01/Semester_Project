@@ -83,65 +83,82 @@ CMakeFiles/Semester_Project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Semester_Project.dir/main.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\shatr\CLionProjects\Semester_Project\main.cpp -o CMakeFiles\Semester_Project.dir\main.cpp.s
 
-CMakeFiles/Semester_Project.dir/Character.cpp.obj: CMakeFiles/Semester_Project.dir/flags.make
-CMakeFiles/Semester_Project.dir/Character.cpp.obj: CMakeFiles/Semester_Project.dir/includes_CXX.rsp
-CMakeFiles/Semester_Project.dir/Character.cpp.obj: C:/Users/shatr/CLionProjects/Semester_Project/Character.cpp
-CMakeFiles/Semester_Project.dir/Character.cpp.obj: CMakeFiles/Semester_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\shatr\CLionProjects\Semester_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Semester_Project.dir/Character.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Semester_Project.dir/Character.cpp.obj -MF CMakeFiles\Semester_Project.dir\Character.cpp.obj.d -o CMakeFiles\Semester_Project.dir\Character.cpp.obj -c C:\Users\shatr\CLionProjects\Semester_Project\Character.cpp
+CMakeFiles/Semester_Project.dir/Character/Character.cpp.obj: CMakeFiles/Semester_Project.dir/flags.make
+CMakeFiles/Semester_Project.dir/Character/Character.cpp.obj: CMakeFiles/Semester_Project.dir/includes_CXX.rsp
+CMakeFiles/Semester_Project.dir/Character/Character.cpp.obj: C:/Users/shatr/CLionProjects/Semester_Project/Character/Character.cpp
+CMakeFiles/Semester_Project.dir/Character/Character.cpp.obj: CMakeFiles/Semester_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\shatr\CLionProjects\Semester_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Semester_Project.dir/Character/Character.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Semester_Project.dir/Character/Character.cpp.obj -MF CMakeFiles\Semester_Project.dir\Character\Character.cpp.obj.d -o CMakeFiles\Semester_Project.dir\Character\Character.cpp.obj -c C:\Users\shatr\CLionProjects\Semester_Project\Character\Character.cpp
 
-CMakeFiles/Semester_Project.dir/Character.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Semester_Project.dir/Character.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\shatr\CLionProjects\Semester_Project\Character.cpp > CMakeFiles\Semester_Project.dir\Character.cpp.i
+CMakeFiles/Semester_Project.dir/Character/Character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Semester_Project.dir/Character/Character.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\shatr\CLionProjects\Semester_Project\Character\Character.cpp > CMakeFiles\Semester_Project.dir\Character\Character.cpp.i
 
-CMakeFiles/Semester_Project.dir/Character.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Semester_Project.dir/Character.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\shatr\CLionProjects\Semester_Project\Character.cpp -o CMakeFiles\Semester_Project.dir\Character.cpp.s
+CMakeFiles/Semester_Project.dir/Character/Character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Semester_Project.dir/Character/Character.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\shatr\CLionProjects\Semester_Project\Character\Character.cpp -o CMakeFiles\Semester_Project.dir\Character\Character.cpp.s
 
-CMakeFiles/Semester_Project.dir/Map.cpp.obj: CMakeFiles/Semester_Project.dir/flags.make
-CMakeFiles/Semester_Project.dir/Map.cpp.obj: CMakeFiles/Semester_Project.dir/includes_CXX.rsp
-CMakeFiles/Semester_Project.dir/Map.cpp.obj: C:/Users/shatr/CLionProjects/Semester_Project/Map.cpp
-CMakeFiles/Semester_Project.dir/Map.cpp.obj: CMakeFiles/Semester_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\shatr\CLionProjects\Semester_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Semester_Project.dir/Map.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Semester_Project.dir/Map.cpp.obj -MF CMakeFiles\Semester_Project.dir\Map.cpp.obj.d -o CMakeFiles\Semester_Project.dir\Map.cpp.obj -c C:\Users\shatr\CLionProjects\Semester_Project\Map.cpp
+CMakeFiles/Semester_Project.dir/Map/Map.cpp.obj: CMakeFiles/Semester_Project.dir/flags.make
+CMakeFiles/Semester_Project.dir/Map/Map.cpp.obj: CMakeFiles/Semester_Project.dir/includes_CXX.rsp
+CMakeFiles/Semester_Project.dir/Map/Map.cpp.obj: C:/Users/shatr/CLionProjects/Semester_Project/Map/Map.cpp
+CMakeFiles/Semester_Project.dir/Map/Map.cpp.obj: CMakeFiles/Semester_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\shatr\CLionProjects\Semester_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Semester_Project.dir/Map/Map.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Semester_Project.dir/Map/Map.cpp.obj -MF CMakeFiles\Semester_Project.dir\Map\Map.cpp.obj.d -o CMakeFiles\Semester_Project.dir\Map\Map.cpp.obj -c C:\Users\shatr\CLionProjects\Semester_Project\Map\Map.cpp
 
-CMakeFiles/Semester_Project.dir/Map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Semester_Project.dir/Map.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\shatr\CLionProjects\Semester_Project\Map.cpp > CMakeFiles\Semester_Project.dir\Map.cpp.i
+CMakeFiles/Semester_Project.dir/Map/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Semester_Project.dir/Map/Map.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\shatr\CLionProjects\Semester_Project\Map\Map.cpp > CMakeFiles\Semester_Project.dir\Map\Map.cpp.i
 
-CMakeFiles/Semester_Project.dir/Map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Semester_Project.dir/Map.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\shatr\CLionProjects\Semester_Project\Map.cpp -o CMakeFiles\Semester_Project.dir\Map.cpp.s
+CMakeFiles/Semester_Project.dir/Map/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Semester_Project.dir/Map/Map.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\shatr\CLionProjects\Semester_Project\Map\Map.cpp -o CMakeFiles\Semester_Project.dir\Map\Map.cpp.s
 
-CMakeFiles/Semester_Project.dir/Attack.cpp.obj: CMakeFiles/Semester_Project.dir/flags.make
-CMakeFiles/Semester_Project.dir/Attack.cpp.obj: CMakeFiles/Semester_Project.dir/includes_CXX.rsp
-CMakeFiles/Semester_Project.dir/Attack.cpp.obj: C:/Users/shatr/CLionProjects/Semester_Project/Attack.cpp
-CMakeFiles/Semester_Project.dir/Attack.cpp.obj: CMakeFiles/Semester_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\shatr\CLionProjects\Semester_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Semester_Project.dir/Attack.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Semester_Project.dir/Attack.cpp.obj -MF CMakeFiles\Semester_Project.dir\Attack.cpp.obj.d -o CMakeFiles\Semester_Project.dir\Attack.cpp.obj -c C:\Users\shatr\CLionProjects\Semester_Project\Attack.cpp
+CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.obj: CMakeFiles/Semester_Project.dir/flags.make
+CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.obj: CMakeFiles/Semester_Project.dir/includes_CXX.rsp
+CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.obj: C:/Users/shatr/CLionProjects/Semester_Project/Attack/Attack.cpp
+CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.obj: CMakeFiles/Semester_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\shatr\CLionProjects\Semester_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.obj -MF CMakeFiles\Semester_Project.dir\Attack\Attack.cpp.obj.d -o CMakeFiles\Semester_Project.dir\Attack\Attack.cpp.obj -c C:\Users\shatr\CLionProjects\Semester_Project\Attack\Attack.cpp
 
-CMakeFiles/Semester_Project.dir/Attack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Semester_Project.dir/Attack.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\shatr\CLionProjects\Semester_Project\Attack.cpp > CMakeFiles\Semester_Project.dir\Attack.cpp.i
+CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\shatr\CLionProjects\Semester_Project\Attack\Attack.cpp > CMakeFiles\Semester_Project.dir\Attack\Attack.cpp.i
 
-CMakeFiles/Semester_Project.dir/Attack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Semester_Project.dir/Attack.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\shatr\CLionProjects\Semester_Project\Attack.cpp -o CMakeFiles\Semester_Project.dir\Attack.cpp.s
+CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\shatr\CLionProjects\Semester_Project\Attack\Attack.cpp -o CMakeFiles\Semester_Project.dir\Attack\Attack.cpp.s
+
+CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.obj: CMakeFiles/Semester_Project.dir/flags.make
+CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.obj: CMakeFiles/Semester_Project.dir/includes_CXX.rsp
+CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.obj: C:/Users/shatr/CLionProjects/Semester_Project/Menu/Menu.cpp
+CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.obj: CMakeFiles/Semester_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\shatr\CLionProjects\Semester_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.obj -MF CMakeFiles\Semester_Project.dir\Menu\Menu.cpp.obj.d -o CMakeFiles\Semester_Project.dir\Menu\Menu.cpp.obj -c C:\Users\shatr\CLionProjects\Semester_Project\Menu\Menu.cpp
+
+CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\shatr\CLionProjects\Semester_Project\Menu\Menu.cpp > CMakeFiles\Semester_Project.dir\Menu\Menu.cpp.i
+
+CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\shatr\CLionProjects\Semester_Project\Menu\Menu.cpp -o CMakeFiles\Semester_Project.dir\Menu\Menu.cpp.s
 
 # Object files for target Semester_Project
 Semester_Project_OBJECTS = \
 "CMakeFiles/Semester_Project.dir/main.cpp.obj" \
-"CMakeFiles/Semester_Project.dir/Character.cpp.obj" \
-"CMakeFiles/Semester_Project.dir/Map.cpp.obj" \
-"CMakeFiles/Semester_Project.dir/Attack.cpp.obj"
+"CMakeFiles/Semester_Project.dir/Character/Character.cpp.obj" \
+"CMakeFiles/Semester_Project.dir/Map/Map.cpp.obj" \
+"CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.obj" \
+"CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.obj"
 
 # External object files for target Semester_Project
 Semester_Project_EXTERNAL_OBJECTS =
 
 Semester_Project.exe: CMakeFiles/Semester_Project.dir/main.cpp.obj
-Semester_Project.exe: CMakeFiles/Semester_Project.dir/Character.cpp.obj
-Semester_Project.exe: CMakeFiles/Semester_Project.dir/Map.cpp.obj
-Semester_Project.exe: CMakeFiles/Semester_Project.dir/Attack.cpp.obj
+Semester_Project.exe: CMakeFiles/Semester_Project.dir/Character/Character.cpp.obj
+Semester_Project.exe: CMakeFiles/Semester_Project.dir/Map/Map.cpp.obj
+Semester_Project.exe: CMakeFiles/Semester_Project.dir/Attack/Attack.cpp.obj
+Semester_Project.exe: CMakeFiles/Semester_Project.dir/Menu/Menu.cpp.obj
 Semester_Project.exe: CMakeFiles/Semester_Project.dir/build.make
 Semester_Project.exe: C:/SFML/lib/libsfml-graphics-s-d.a
 Semester_Project.exe: C:/SFML/lib/libsfml-window-s-d.a
@@ -150,7 +167,7 @@ Semester_Project.exe: C:/SFML/lib/libfreetype.a
 Semester_Project.exe: CMakeFiles/Semester_Project.dir/linkLibs.rsp
 Semester_Project.exe: CMakeFiles/Semester_Project.dir/objects1.rsp
 Semester_Project.exe: CMakeFiles/Semester_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\shatr\CLionProjects\Semester_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Semester_Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\shatr\CLionProjects\Semester_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Semester_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Semester_Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

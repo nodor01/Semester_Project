@@ -86,22 +86,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Attack.cpp">
+		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Attack/Attack.cpp">
 			<Option target="Semester_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Attack.h">
+		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Attack/Attack.h">
 			<Option target="Semester_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Character.cpp">
+		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Character/Character.cpp">
 			<Option target="Semester_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Character.h">
+		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Character/Character.h">
 			<Option target="Semester_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Map.cpp">
+		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Map/Map.cpp">
 			<Option target="Semester_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Map.h">
+		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Map/Map.h">
+			<Option target="Semester_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Menu/Menu.cpp">
+			<Option target="Semester_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/Menu/Menu.h">
 			<Option target="Semester_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/shatr/CLionProjects/Semester_Project/main.cpp">

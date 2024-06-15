@@ -254,8 +254,7 @@ CMakeFiles/Semester_Project.dir/main.cpp.obj: \
  C:/SFML/include/SFML/Graphics/Sprite.hpp \
  C:/SFML/include/SFML/Graphics/Text.hpp \
  C:/SFML/include/SFML/Graphics/VertexBuffer.hpp \
- C:\Users\shatr\CLionProjects\Semester_Project\Map.h \
- C:\Users\shatr\CLionProjects\Semester_Project\Character.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc
+ C:\Users\shatr\CLionProjects\Semester_Project\Menu/Menu.h \
+ C:\Users\shatr\CLionProjects\Semester_Project\Map/Map.h \
+ C:\Users\shatr\CLionProjects\Semester_Project\Character/Character.h \
+ C:/Users/shatr/CLionProjects/Semester_Project/Map/Map.h
